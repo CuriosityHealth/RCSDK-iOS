@@ -1,0 +1,6 @@
+use_frameworks!
+target 'RCSDK_Tests' do
+  pod 'RCSDK', :path => '../'
+  
+  
+end
