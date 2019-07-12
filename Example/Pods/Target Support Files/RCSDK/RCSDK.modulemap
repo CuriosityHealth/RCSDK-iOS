@@ -1,0 +1,6 @@
+framework module RCSDK {
+  umbrella header "RCSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

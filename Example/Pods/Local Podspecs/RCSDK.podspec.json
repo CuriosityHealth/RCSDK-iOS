@@ -1,0 +1,22 @@
+{
+  "name": "RCSDK",
+  "version": "0.1.0",
+  "summary": "A short description of RCSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/jdkizer9/RCSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "jdkizer9": "james.kizer@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/jdkizer9/RCSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "RCSDK/Classes/**/*"
+}

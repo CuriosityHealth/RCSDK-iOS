@@ -21,22 +21,29 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/jdkizer9/RCSDK'
+  s.homepage         = 'https://github.com/curiosityhealth/RCSDK'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jdkizer9' => 'james.kizer@gmail.com' }
-  s.source           = { :git => 'https://github.com/jdkizer9/RCSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/curiosityhealth/RCSDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.swift_version = '5.0'
 
   s.source_files = 'RCSDK/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'RCSDK' => ['RCSDK/Assets/*.png']
-  # }
+  s.dependency 'Gloss', '~> 2.0'
+  s.dependency 'ResearchKit', '~> 1.5'
+  s.dependency 'ResearchSuiteExtensions', '~> 0.22'
+  s.dependency 'ResearchSuiteTaskBuilder', '~> 0.13'
+  s.dependency 'ResearchSuiteResultsProcessor', '~> 0.9'
+  s.dependency 'ResearchSuiteApplicationFramework', '~> 0.23'
+  s.dependency 'LS2SDK'
+  s.dependency 'SnapKit', '~> 4.0'
+  s.dependency 'QRCodeReader.swift', '~> 9'
+  s.dependency 'Alamofire'
+  s.dependency 'CryptoSwift'
+  s.dependency 'JSONWebToken'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
