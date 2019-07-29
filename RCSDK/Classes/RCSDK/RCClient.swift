@@ -16,7 +16,7 @@ open class RCClient: NSObject {
 
     }
     
-    static var dateFormatter: DateFormatter = {
+    public static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         return dateFormatter

@@ -12,6 +12,9 @@ import ResearchKit
 import Gloss
 
 open class RCISTokenScanStepGenerator: RSTBBaseStepGenerator {
+    
+    public init() {}
+    
     open var supportedTypes: [String]! {
         return ["rcisTokenScan"]
     }

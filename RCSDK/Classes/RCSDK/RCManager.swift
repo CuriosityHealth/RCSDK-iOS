@@ -36,7 +36,7 @@ open class RCManager: NSObject {
     static let kRCISJWT = "rcis_jwt"
     
     var credentials: Credentials?
-    var hasJoined: Bool = false
+    public var hasJoined: Bool = false
     
     var client: RCClient!
     var rcisClient: RCISClient?
@@ -181,7 +181,7 @@ open class RCManager: NSObject {
         }
         
         
-        self.protectedDataAvaialbleObserver = NotificationCenter.default.addObserver(forName: .UIApplicationProtectedDataDidBecomeAvailable, object: nil, queue: nil) { [weak self](notification) in
+        self.protectedDataAvaialbleObserver = NotificationCenter.default.addObserver(forName: UIApplication.protectedDataDidBecomeAvailableNotification, object: nil, queue: nil) { [weak self](notification) in
             do {
                 try startUploading()
             } catch let error as NSError {

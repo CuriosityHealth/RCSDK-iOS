@@ -79,7 +79,7 @@ open class RCISTokenStepViewController: RSQuestionViewController, QRCodeReaderVi
         self.textLabel.text = self.step?.text
         
         self.readerVC.delegate = self
-        self.addChildViewController(self.readerVC)
+        self.addChild(self.readerVC)
         self.contentView.addSubview(self.readerVC.view)
         self.readerVC.view.snp.makeConstraints { (make) in
             

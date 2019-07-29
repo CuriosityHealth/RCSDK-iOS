@@ -21,11 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/curiosityhealth/RCSDK'
+  s.homepage         = 'https://github.com/curiosityhealth/RCSDK-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'jdkizer9' => 'james.kizer@gmail.com' }
-  s.source           = { :git => 'https://github.com/curiosityhealth/RCSDK.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/curiosityhealth/RCSDK-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '10.0'
