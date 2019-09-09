@@ -133,10 +133,14 @@ open class RCConcreteInstrumentInstance: RCInstrumentInstance, RCInstrumentInsta
         self.instrumentVersion = schema.version.versionString
         self.created = header.acquisitionProvenance.sourceCreationDateTime
         
+        let taskRunIdentifier: String = header.metadata?["taskRunUUID"] as! String
+        
         let jsonFieldID = "\(schema.name.lowercased())_json"
+        let taskRunIdentifierFieldID = "\(schema.name.lowercased())_task_run_identifier"
         
         self.fields = [
-            jsonFieldID: jsonString
+            jsonFieldID: jsonString,
+            taskRunIdentifierFieldID: taskRunIdentifier
         ]
         
     }
