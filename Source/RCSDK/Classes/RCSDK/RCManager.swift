@@ -571,5 +571,9 @@ open class RCManager: NSObject {
             return self.credentials
         }
     }
+    
+    public func getRecordID() -> String? {
+        return getCredentials()?.recordID
+    }
 
 }
